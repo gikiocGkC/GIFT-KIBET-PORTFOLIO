@@ -90,3 +90,23 @@ footer .wordmark{color:#f4f7f8}
  .navigation{background:var(--navy);border-color:#ffffff25}
  .navigation .nav-contact{text-align:center}
 }
+
+
+/* Expanded professional profile presentation */
+.about-layout{align-items:start}
+.about-copy{max-width:700px}
+.about-copy .about-lead{max-width:620px;font-size:clamp(20px,2.3vw,27px);line-height:1.45;letter-spacing:-.025em;color:#f0f4f6}
+.about-copy>p:not(.about-lead){max-width:650px;font-size:13px;line-height:1.95}
+.discipline-list{margin-top:30px}
+.profile-practice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:65px}
+.profile-practice-grid article{padding:22px 22px 24px;border:1px solid var(--line);background:#142638;min-height:185px}
+.profile-practice-grid article>span{font-size:9px;font-weight:700;letter-spacing:1.2px;color:var(--coral)}
+.profile-practice-grid h3{font:600 19px/1.2 var(--display);letter-spacing:-.025em;margin:28px 0 10px;color:var(--ink)}
+.profile-practice-grid p{font-size:11px;line-height:1.8;color:#aab8c2;margin:0;max-width:42ch}
+.experience-item ul{padding-left:18px;margin:15px 0 0}
+.experience-item li{padding-left:4px;margin:7px 0;font-size:12px;line-height:1.75}
+@media(max-width:760px){
+ .profile-practice-grid{grid-template-columns:1fr;margin-top:38px}
+ .profile-practice-grid article{min-height:0}
+ .profile-practice-grid h3{margin-top:17px}
+}
