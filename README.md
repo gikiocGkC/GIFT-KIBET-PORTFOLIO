@@ -1,22 +1,25 @@
-# Gift Kibet — Professional Portfolio
+# Gift Kibet — Creative Portfolio
 
-Responsive personal portfolio for Gift Kibet, Multimedia & Communications Professional.
+A responsive, work-led portfolio website for a visual design and multimedia professional.
 
-## Project structure
-- `index.html` — website content and structure
-- `styles.css` — responsive visual design
-- `script.js` — mobile navigation and portfolio category filters
-- `public/Gift_Kibet_CV.pdf` — downloadable CV PDF
-- `public/Gift_Kibet_CV.docx` — original editable CV
-- `vercel.json` — Vercel static deployment configuration
+## Structure
+- `index.html` — portfolio sections and project showcases
+- `styles.css` — visual system and responsive layouts
+- `script.js` — mobile navigation and project filters
+- `vercel.json` — static deployment settings
 
-## Run locally
-Open `index.html` in a browser. No build step or package installation is required.
+## Portfolio sections
+- Hero / creative introduction
+- Selected work gallery with category filters
+- About and creative disciplines
+- Professional experience and education
+- Capabilities and contact
 
-## Deploy using Vercel
-Import this GitHub repository in Vercel. Choose **Other** as the framework preset, leave the build command and output directory empty, and deploy from the repository root.
+## Media staging
+The portfolio cards currently use designed visual placeholders. Replace these with original project photographs, screenshots, video stills and case-study material when supplied. Do not present placeholder artwork as completed client work.
+
+## Deploy
+Import this repository into Vercel. Choose **Other** as the framework preset; no build command or package installation is required.
 
 ## Before public launch
-Replace the clearly labelled portfolio preview placeholders with genuine project images or videos. Add verified LinkedIn/GitHub profile URLs and confirm contact details. Check the live site on desktop and mobile, and test the CV download link.
-
-Portfolio gallery panels are illustrative placeholders, not claims of completed client projects. Add only genuine work samples and accurate descriptions.
+Add real portfolio media, verify all project descriptions and contact details, and add a downloadable CV under `public/` with a corresponding link in the page.
