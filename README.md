@@ -6,7 +6,7 @@ A responsive, work-led portfolio website for a visual design and multimedia prof
 - `index.html` — portfolio sections and project showcases
 - `styles.css` — visual system and responsive layouts
 - `script.js` — mobile navigation and project filters
-- `vercel.json` — static deployment settings
+- `public/Gift_Kibet_CV.pdf` — downloadable CV\n- `vercel.json` — static deployment settings
 
 ## Portfolio sections
 - Hero / creative introduction
@@ -22,4 +22,4 @@ The portfolio cards currently use designed visual placeholders. Replace these wi
 Import this repository into Vercel. Choose **Other** as the framework preset; no build command or package installation is required.
 
 ## Before public launch
-Add real portfolio media, verify all project descriptions and contact details, and add a downloadable CV under `public/` with a corresponding link in the page.
+Add real portfolio media and verify all project descriptions and contact details. The CV PDF is linked for download from the navigation and hero section.
