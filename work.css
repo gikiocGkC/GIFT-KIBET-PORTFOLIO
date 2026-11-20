@@ -16,3 +16,20 @@
 .project-card:hover .project-card-art:before{transform:scale(1.15);transition:transform .3s}
 .archive-footnote{font-size:11px;color:#64717a;line-height:1.7;margin-top:22px}
 @media(max-width:680px){.project-card-grid{grid-template-columns:1fr;gap:22px}.project-card-art{min-height:225px}}
+
+
+/* Compact, keyboard-accessible navigation for portfolio subpages */
+.work-menu{display:contents}
+.work-menu>summary{display:none}
+@media(max-width:680px){
+ .site-header{height:auto;min-height:72px;padding:13px 7vw;gap:12px}
+ .work-menu{display:block;position:relative;margin-left:auto}
+ .work-menu>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;color:#fff;border:1px solid #ffffff45;padding:10px 12px;font-size:10px;font-weight:700;letter-spacing:.7px}
+ .work-menu>summary::-webkit-details-marker{display:none}
+ .work-menu>summary span{color:var(--coral);font-size:15px}
+ .work-menu[open]>summary{border-color:var(--coral)}
+ .work-menu .navigation{display:none;position:absolute;right:0;top:calc(100% + 10px);min-width:190px;padding:12px;background:var(--navy);border:1px solid #ffffff35;box-shadow:0 16px 35px #0004;align-items:stretch;gap:0;z-index:30}
+ .work-menu[open] .navigation{display:flex;flex-direction:column}
+ .work-menu .navigation a{display:block;padding:12px 10px;font-size:11px}
+ .work-menu .navigation .nav-contact{margin-top:5px;text-align:center}
+}
