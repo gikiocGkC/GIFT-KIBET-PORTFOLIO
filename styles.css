@@ -32,3 +32,61 @@
 .education-panel a:hover{color:var(--teal)}
 .contact-email{display:block;margin-top:10px}
 @media(max-width:680px){.hero-actions{flex-wrap:wrap;gap:16px}.cv-download{flex-basis:100%;width:max-content}}
+
+
+/* DARK PREMIUM THEME — shared across the homepage and portfolio pages */
+:root{
+  color-scheme:dark;
+  --navy:#0b1622;
+  --navy-2:#142638;
+  --teal:#1593a5;
+  --teal-dark:#087487;
+  --coral:#ff8964;
+  --paper:#111f2e;
+  --paper-2:#192b3d;
+  --ink:#edf2f4;
+  --muted:#aab8c2;
+  --line:#35495b;
+  --white:#f7f9fa;
+}
+body{background:var(--navy);color:#edf2f4}
+.site-header{background:rgba(11,22,34,.94);border-bottom-color:#ffffff20}
+.wordmark-name small{color:#a6b4be}
+.navigation a{color:#c7d1d8}
+.navigation .nav-contact{background:var(--coral);color:var(--navy)}
+.section-light,.section-paper{background:var(--paper);color:var(--ink)}
+.section-note,.about-copy>p:not(.about-lead),.skills-intro>p,.skill-card p,.work-info p{color:#aab8c2}
+.discipline-list{border-color:var(--line)}
+.discipline-list span{color:#c1ccd3}
+.work-info{border-color:var(--line)}
+.filters .filter{border-color:#536777;color:#c6d0d6}
+.filters .filter:hover,.filters .filter[aria-pressed=true]{background:var(--coral);border-color:var(--coral);color:var(--navy)}
+.skills-grid,.skill-card,.toolbox{border-color:var(--line)}
+.skill-card{background:#142638}
+.tool-tags span{background:#263a4d;color:#e0e7eb}
+.toolbox-list span{background:#263a4d;color:#edf2f4}
+.education-panel{border-color:var(--line)}
+.education-panel>div{border-color:var(--line)}
+.education-panel p,.experience-item p,.experience-item li{color:#b9c5cd}
+.experience-item{border-color:var(--line)}
+.contact-section{background:var(--navy-2);color:#edf2f4}
+.contact-section .eyebrow{color:#aebdc7}
+.contact-kicker>span{color:#c4cfd6}
+.contact-section h2 em{color:var(--coral)}
+.contact-bottom{border-color:#ffffff35}
+.contact-bottom p{color:#c2cdd4}
+.contact-email{color:#f2f5f6}
+.contact-email:hover{color:var(--coral)}
+.contact-social{color:#c2cdd4}
+.contact-social a{color:var(--coral)}
+footer{background:#08121d;color:#aebdc7;border-top:1px solid #ffffff18}
+footer .wordmark{color:#f4f7f8}
+.cv-download{color:#f1f5f7}
+.cv-download:hover{color:var(--coral)}
+.education-panel a{color:#edf2f4}
+.education-panel a:hover{color:var(--coral)}
+.portfolio-note{border-color:var(--line);color:#aab8c2}
+@media(max-width:680px){
+ .navigation{background:var(--navy);border-color:#ffffff25}
+ .navigation .nav-contact{text-align:center}
+}
