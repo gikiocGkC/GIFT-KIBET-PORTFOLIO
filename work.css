@@ -33,3 +33,12 @@
  .work-menu .navigation a{display:block;padding:12px 10px;font-size:11px}
  .work-menu .navigation .nav-contact{margin-top:5px;text-align:center}
 }
+
+
+/* Responsive media containers for image, video and hosted embeds */
+.project-video,.project-embed{display:block;width:100%;max-width:100%;aspect-ratio:16/9;background:#101d2b;object-fit:contain;border:0}
+.project-embed{height:auto;min-height:260px}
+.project-video-guide{margin-top:28px;padding:18px 20px;border:1px solid var(--line);color:#64717a;font-size:11px;line-height:1.8}
+.project-video-guide strong{display:block;color:var(--ink);font:600 15px var(--display);margin-bottom:5px}
+.project-video-guide code{display:block;overflow-wrap:anywhere;color:var(--teal);margin-top:8px}
+@media(max-width:680px){.project-video-guide{padding:15px}.project-embed{min-height:190px}}
