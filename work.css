@@ -120,3 +120,49 @@
 .case-study-focus-grid h3{font:600 19px/1.15 var(--display);letter-spacing:-.025em;margin:25px 0 10px;color:var(--ink)}
 .case-study-focus-grid p{font-size:11px;line-height:1.8;color:#aab8c2;margin:0}
 @media(max-width:760px){.case-study-focus{margin-top:48px;padding-top:30px}.case-study-focus-grid{grid-template-columns:1fr}.case-study-focus-grid article{min-height:0}.case-study-focus-grid h3{margin-top:18px}}
+
+
+/* Refined category archive gallery cards — typographic previews, not project imagery */
+.project-card-grid{gap:34px 24px;align-items:start}
+.project-card{position:relative;outline-offset:7px}
+.project-card-art{
+ min-height:310px;padding:25px 26px 22px;
+ background:
+  radial-gradient(ellipse at 82% 28%,#1593a52b 0,transparent 38%),
+  linear-gradient(145deg,#142638 0%,#0b1622 72%);
+ border:1px solid #35495b;
+ transition:border-color .25s,transform .25s,box-shadow .25s;
+}
+.project-card:nth-child(2n) .project-card-art{
+ background:
+  radial-gradient(ellipse at 18% 78%,#ff89642a 0,transparent 42%),
+  linear-gradient(145deg,#1a3042 0%,#101d2b 76%);
+}
+.project-card-art:after{
+ content:"";position:absolute;inset:52px 24px 52px auto;width:34%;max-width:145px;
+ border:1px solid #ffffff24;border-radius:48% 48% 5px 5px;
+ background:linear-gradient(180deg,#1593a51a,transparent);
+ transform:rotate(8deg);z-index:-1;
+}
+.project-card-art:before{right:-72px;top:12px;width:260px;height:260px;border-color:#ffffff24;box-shadow:0 0 0 24px #ffffff08,0 0 0 48px #ffffff05}
+.project-card-art span{color:#9fb4c1}
+.project-card-art strong{max-width:82%;font-size:clamp(29px,3.6vw,43px);text-wrap:balance}
+.project-card-art small{color:var(--coral);font-size:8px}
+.project-card-info{padding:17px 2px 0;gap:20px}
+.project-card-info h3{font-size:20px}
+.project-card-info p{max-width:54ch}
+.project-card-info>span{flex:0 0 auto;align-self:flex-start;font-size:21px}
+.project-card:hover .project-card-art,.project-card:focus-visible .project-card-art{
+ border-color:var(--teal);transform:translateY(-4px);box-shadow:0 18px 38px #0003
+}
+.project-card:focus-visible{outline:2px solid var(--coral)}
+.project-card-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.project-card-meta span{display:inline-flex;align-items:center;min-height:25px;padding:5px 8px;border:1px solid #35495b;color:#b9c8d1;font-size:8px;letter-spacing:.7px;text-transform:uppercase}
+.archive-empty{background:linear-gradient(145deg,#14263880,#0b162230);border-color:#536777}
+.archive-empty .empty-mark{font-size:32px;color:var(--coral)}
+.archive-empty h3{color:var(--ink)}
+@media(max-width:760px){
+ .project-card-grid{grid-template-columns:1fr;gap:26px}
+ .project-card-art{min-height:245px;padding:20px}
+ .project-card-info{padding-top:13px}
+}
