@@ -78,3 +78,31 @@
 .publication-slot strong{font:600 18px var(--display);color:var(--ink)}
 .publication-slot small{font-size:9px;line-height:1.6}
 @media(max-width:680px){.project-pagination{grid-template-columns:1fr 1fr;gap:18px}.project-page-category{grid-column:1/-1;grid-row:1}.project-page-next{text-align:right}.publication-preview-heading{align-items:flex-start;flex-direction:column}.publication-slot-grid{grid-template-columns:1fr}.publication-slot{min-height:150px}}
+
+
+/* Dark premium surfaces for category archives and case studies */
+.work-page,.project-template{background:var(--paper);color:var(--ink)}
+.work-breadcrumb{color:#aab8c2}
+.work-breadcrumb a,.work-hero h1 em,.archive-empty .empty-mark,.archive-next,.project-back{color:var(--teal)}
+.work-hero{border-color:var(--line)}
+.work-hero p,.work-hero-aside,.archive-heading span,.archive-empty p,.project-header p,.project-media-placeholder span,.project-description p,.project-gallery-placeholder div,.archive-footnote{color:#aab8c2}
+.archive-empty{border-color:#536777}
+.category-nav a{border-color:#536777;color:#d0d9de}
+.category-nav a:hover,.category-nav a[aria-current=page]{background:var(--coral);border-color:var(--coral);color:var(--navy)}
+.project-media-placeholder,.project-gallery-placeholder div,.project-image-grid figure,.publication-slot{background:#1b3042}
+.project-media-placeholder strong,.project-description h2,.publication-slot strong{color:#edf2f4}
+.project-details .project-meta,.project-description,.project-pagination,.project-page-link{border-color:var(--line)}
+.project-meta span,.project-page-category,.project-card-info>span{color:var(--teal)}
+.project-page-link span,.publication-preview-heading p{color:#aab8c2}
+.project-page-link strong{color:#edf2f4}
+.project-card-info{border-color:var(--line)}
+.project-card-info p{color:#aab8c2}
+.project-video-guide{border-color:var(--line);color:#aab8c2}
+.project-video-guide strong{color:#edf2f4}
+.project-video-guide code{color:#5bc0cf}
+.project-image-grid figcaption{color:#b6c3cb}
+.publication-slot{border-color:#536777;color:#b6c3cb}
+.project-pagination{border-top-color:var(--line);border-bottom-color:var(--line)}
+@media(max-width:680px){
+ .work-menu .navigation{background:var(--navy);border-color:#ffffff35}
+}
