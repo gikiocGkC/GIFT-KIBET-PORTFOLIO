@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch("/assets/Gift-Kibet-CV.pdf.b64");
         if (!response.ok) throw new Error("CV file unavailable");
 
-        const encoded = (await response.text()).replace(/\\s/g, "");
+        const encoded = (await response.text()).replace(/\s/g, "");
         if (!encoded.startsWith("JVBER")) throw new Error("Invalid CV file");
 
         const binary = atob(encoded);
