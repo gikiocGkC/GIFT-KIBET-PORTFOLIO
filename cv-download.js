@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(download);
       download.click();
       download.remove();
-      URL.revokeObjectURL(url);
+      setTimeout(() => URL.revokeObjectURL(url), 1500);
     } catch (error) {
       link.textContent = "CV unavailable — please try again";
     } finally {
